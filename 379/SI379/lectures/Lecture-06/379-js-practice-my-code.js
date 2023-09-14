@@ -43,7 +43,7 @@ function largest(lst) {
  * Define a function `fact` that accepts one argument (a positive integer n) and returns n!
  * 
  * Note: 0! is 1
- */
+ */ 
 
 
 // This way also works, more hard coding though
