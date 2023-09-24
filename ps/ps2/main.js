@@ -101,9 +101,10 @@ inp.addEventListener('keydown', (ev) => {
             infoMessage.innerText = "You win! The answer was " + correctAnswer;
             infoMessage.classList.remove('hidden');
             inp.disabled = true;
+            displayGuessFeedback(value);
         }
         if (value != correctAnswer && value.length === WORD_LENGTH) {
-
+            console.log(correctAnswer);
             isValidWord(value, function(result){
                 if (result === true){
                     displayGuessFeedback(value);
