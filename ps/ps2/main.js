@@ -104,7 +104,7 @@ inp.addEventListener('keydown', (ev) => {
             displayGuessFeedback(value);
         }
         if (value != correctAnswer && value.length === WORD_LENGTH) {
-            isValidWord(value, function(result){
+            isValidWord(value, (result) => {
                 if (result === true){
                     displayGuessFeedback(value);
                 }
