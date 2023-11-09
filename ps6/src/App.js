@@ -5,7 +5,6 @@ import { random } from 'lodash';
 const correctRed = random(0, 255);
 const correctGreen = random(0, 255);
 const correctBlue = random(0, 255);
-console.log(correctRed, correctGreen, correctBlue);
 
 function colorsMatch(red, green, blue, correctRed, correctGreen, correctBlue) {
   red = parseInt(red);
@@ -14,7 +13,6 @@ function colorsMatch(red, green, blue, correctRed, correctGreen, correctBlue) {
  
   if ((red === correctRed) && (green === correctGreen) && (blue === correctBlue)) {
     let myguess = document.querySelector('#myguess');
-    console.log('Correct!');
     myguess.append('Congrats! You are Correct!');
   }
   else {
